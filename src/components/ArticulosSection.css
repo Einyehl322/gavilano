@@ -1,0 +1,242 @@
+.articulos-section {
+  position: relative;
+  width: 100%;
+  height: 1420px;
+}
+
+.articulos-heading {
+  position: absolute;
+  top: 140px;
+  left: 124px;
+  width: 218px;
+  height: 29px;
+  white-space: nowrap;
+  text-align: left;
+  font: normal normal 600 24px/29px Montserrat;
+  letter-spacing: 1.92px;
+  color: #111727;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.articulos-subtitle-block {
+  position: absolute;
+  top: 218px;
+  left: 125px;
+  width: 1000px;
+  height: 200px;
+}
+
+.articulos-subtitle-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1000px;
+  text-align: left;
+  font: normal normal 900 88px/85px Inter;
+  letter-spacing: -1.76px;
+  color: #1B1F28;
+  text-transform: uppercase;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.articulos-subtitle-italic {
+  position: absolute;
+  top: 85px;
+  left: 0;
+  width: 836px;
+  text-align: left;
+  font: italic normal 900 88px/85px Inter;
+  letter-spacing: -1.76px;
+  color: #EC6726;
+  text-transform: uppercase;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.articulos-view-all {
+  position: absolute;
+  top: 402px;
+  left: 1674px;
+  width: fit-content;
+  height: 19px;
+  text-align: left;
+  font: normal normal 600 16px/19px Montserrat;
+  letter-spacing: 0px;
+  color: #1B1F28;
+  opacity: 1;
+  margin: 0;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: color 0.25s ease;
+}
+
+.articulos-view-all-text {
+  display: inline-block;
+}
+
+.articulos-view-all-arrow {
+  display: block;
+  width: 17px;
+  height: 15px;
+  background-color: #1B1F28;
+  -webkit-mask: url('/images/Trazado88.png') center center / contain no-repeat;
+  mask: url('/images/Trazado88.png') center center / contain no-repeat;
+  opacity: 1;
+  flex-shrink: 0;
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.articulos-view-all:hover {
+  color: #E8A15A;
+}
+
+.articulos-view-all:hover .articulos-view-all-arrow {
+  background-color: #D80E2B;
+  transform: translateX(5px);
+}
+
+.articulos-card-bg {
+  position: absolute;
+  left: 125px;
+  width: 1670px;
+  height: 258px;
+  background: #F7F7F6;
+  opacity: 0;
+}
+
+.articulos-divider {
+  position: absolute;
+  left: 125px;
+  width: 1670px;
+  height: 1px;
+  background: linear-gradient(to right, rgba(192,193,199,0.9), rgba(192,193,199,0.3));
+}
+
+.articulos-image {
+  position: absolute;
+  left: 149px;
+  width: 347px;
+  height: 210px;
+  background-size: cover;
+}
+
+.articulos-analisis {
+  position: absolute;
+  left: 536px;
+  width: 115px;
+  height: 27px;
+  text-align: left;
+  font: italic normal 900 24px/27px Inter;
+  letter-spacing: 1.76px;
+  color: #EC6726;
+  text-transform: uppercase;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.articulos-title {
+  position: absolute;
+  left: 692px;
+  width: 586px;
+  height: 57px;
+  text-align: left;
+  font: normal normal bold 24px/28px Montserrat;
+  letter-spacing: 0px;
+  margin: 0;
+}
+
+.articulos-title-red {
+  color: #D80E2B;
+}
+
+.articulos-title-bold-dark {
+  color: #1B1F28;
+}
+
+.articulos-date {
+  position: absolute;
+  left: 1595px;
+  width: 176px;
+  height: 27px;
+  text-align: left;
+  font: normal normal normal 22px/27px Montserrat;
+  letter-spacing: 1.76px;
+  color: #1B1F28;
+  text-transform: uppercase;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.articulos-min {
+  position: absolute;
+  left: 1699px;
+  width: 72px;
+  height: 27px;
+  text-align: left;
+  font: normal normal normal 22px/27px Montserrat;
+  letter-spacing: 1.76px;
+  color: #1B1F28;
+  text-transform: uppercase;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.articulos-nota {
+  position: absolute;
+  left: 1576px;
+  height: 18px;
+  text-align: left;
+  font: normal normal 600 14px/18px Montserrat;
+  letter-spacing: 0px;
+  color: #1B1F28;
+  text-transform: uppercase;
+  margin: 0;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.25s ease;
+}
+
+.articulos-nota-arrow {
+  display: block;
+  width: 17px;
+  height: 15px;
+  background-color: #1B1F28;
+  -webkit-mask: url('/images/Trazado88.png') center center / contain no-repeat;
+  mask: url('/images/Trazado88.png') center center / contain no-repeat;
+  flex-shrink: 0;
+  opacity: 1;
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.articulos-nota:hover {
+  color: #D80E2B;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+.articulos-nota:hover .articulos-nota-arrow {
+  background-color: #D80E2B;
+  transform: translateX(5px);
+}
+
+.articulos-desc {
+  position: absolute;
+  left: 691px;
+  width: 675px;
+  height: 48px;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 28px;
+  letter-spacing: 0px;
+  color: #1B1F28;
+  margin: 0;
+}

@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+.footer {
+  position: relative;
+  left: 0.2974853515625px;
+  width: 1918px;
+  height: 240px;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, #111827 0%, #0f172a 50%, #111827 100%) 0% 0% no-repeat padding-box;
+  border-top: 24px solid #f26532;
+  overflow: hidden;
+}
+
+.footer-container {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.footer-group-icon {
+  position: absolute;
+  top: 52px;
+  left: 126px;
+  width: 272px;
+  height: 136px;
+  display: block;
+  background: transparent url('/images/alcalde.png') 0% 0% no-repeat padding-box;
+  opacity: 0.47;
+  pointer-events: none;
+}
+
+.footer-component-icon {
+   position: absolute;
+   top: 108px;
+   left: 1276px;
+   width: 224px;
+   height: 37px;
+   display: block;
+   background: transparent url('/images/componente.png') 0% 0% no-repeat padding-box;
+   opacity: 1;
+   pointer-events: none;
+}
+
+.footer-links {
+  position: absolute;
+  top: 90px;
+  width: 75px;
+  height: 83px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  text-align: left;
+  font: normal normal normal 14px/32px 'Open Sans', Helvetica, Arial, sans-serif;
+  letter-spacing: 0;
+  color: #ffffff;
+  text-transform: capitalize;
+  opacity: 0.5;
+}
+
+.footer-links-label {
+  position: absolute;
+  top: 43px;
+  width: 49px;
+  height: auto;
+  padding-bottom: 4px;
+  margin: 0;
+  display: inline-block;
+  text-align: left;
+  font: normal normal normal 14px/32px 'Open Sans', Helvetica, Arial, sans-serif;
+  letter-spacing: 0;
+  color: #ffffff;
+  text-transform: capitalize;
+  opacity: 0.5;
+  transition: transform 0.3s ease, opacity 0.3s ease, color 0.3s ease;
+}
+
+.footer-links-label--primary {
+  left: 882px;
+}
+
+.footer-links-label--secondary {
+  left: 1036px;
+}
+
+.footer-links-label:hover {
+  opacity: 1;
+  color: #FF6B2C;
+  font-style: italic;
+  transform: translateY(-5px);
+}
+
+.footer-links-label::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #FF6B2C;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.footer-links-label:hover::after {
+  opacity: 1;
+}
+
+.footer-links a {
+  position: relative;
+  display: inline-block;
+  align-self: flex-start;
+  width: fit-content;
+  padding-bottom: 4px;
+  color: inherit;
+  text-decoration: none;
+  font: inherit;
+  line-height: 32px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.footer-links a:hover {
+  opacity: 1;
+  color: #FF6B2C;
+  font-style: italic;
+  transform: translateY(-5px);
+}
+
+.footer-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #FF6B2C;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.footer-links a:hover::after {
+  opacity: 1;
+}
+
+.footer-links--primary {
+  left: 882px;
+}
+
+.footer-links--secondary {
+  left: 1036px;
+}
+
+.footer-qr {
+  position: absolute;
+  top: 74px;
+  left: 1570px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-qr-box {
+  width: 90px;
+  height: 90px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 8px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.footer-qr-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.scroll-top {
+  position: absolute;
+  bottom: 24px;
+  right: 60px;
+  width: 57px;
+  height: 57px;
+  border: none;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  transition: transform 0.3s;
+}
+
+.scroll-top:hover {
+  transform: translateY(-4px);
+}
+
+.scroll-top-image {
+  display: block;
+  width: 57px;
+  height: 57px;
+  object-fit: contain;
+}
+
+@media (max-width: 900px) {
+  .footer {
+    width: 100%;
+    left: 0;
+    height: auto;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 24px;
+    text-align: center;
+  }
+
+  .footer-links {
+    position: static;
+    width: auto;
+    height: auto;
+    align-items: center;
+  }
+
+  .footer-links-label {
+    display: none;
+  }
+
+  .footer-group-icon {
+    position: static;
+    width: 272px;
+    height: 136px;
+    margin-bottom: 12px;
+  }
+
+  .footer-component-icon {
+    display: none;
+  }
+
+  .footer-qr,
+  .scroll-top {
+    position: static;
+  }
+}

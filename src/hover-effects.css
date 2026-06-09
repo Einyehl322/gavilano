@@ -1,0 +1,29 @@
+.hero-button,
+.about-button,
+.aporte-projects-nav-item,
+.aporte-project-arrow,
+.aporte-project-image,
+.propuestas-detalle-block,
+.propuestas-detalle-image,
+.sumate-box-button,
+.scroll-top,
+.articulos-nota,
+.articulos-image {
+  transition: all 0.3s ease;
+  will-change: transform;
+}
+
+.hero-button:hover,
+.about-button:hover,
+.aporte-projects-nav-item:hover,
+.aporte-project-arrow:hover,
+.aporte-project-image:hover,
+.propuestas-detalle-block:hover,
+.propuestas-detalle-image:hover,
+.sumate-box-button:hover,
+.scroll-top:hover,
+.articulos-nota:hover,
+.articulos-image:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}

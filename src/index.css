@@ -1,0 +1,50 @@
+:root {
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+
+  font: 18px/145% var(--sans);
+  color-scheme: light dark;
+  color: #6b6375;
+  background: #fff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 120px;
+}
+
+section[id] {
+  scroll-margin-top: 120px;
+}
+
+.about-heading::before,
+.agenda-heading::before,
+.aporte-heading::before,
+.propuestas-text::before,
+.articulos-heading::before,
+.sumate-heading::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -123px;
+  width: calc(123px - 13px);
+  height: 1px;
+  background: rgba(236, 103, 38, 0.45);
+  opacity: 1;
+  transform: translateY(-50%);
+}
+
+body {
+  margin: 0;
+  overflow-x: auto;
+}
+
+#root {
+  width: 1920px;
+  min-width: 1920px;
+  margin: 0 auto;
+  min-height: 100svh;
+}

@@ -1,0 +1,667 @@
+.aporte-section {
+  position: relative;
+  width: 100%;
+  height: 1553px;
+  margin-top: 0;
+  background: transparent url('/images/Rectángulo 13149.png') 0% 0% no-repeat padding-box;
+}
+
+.aporte-heading {
+  position: absolute;
+  top: 281px;
+  left: 124px;
+  white-space: nowrap;
+  text-align: left;
+  font: normal normal 600 24px/29px Montserrat;
+  letter-spacing: 1.92px;
+  color: #111727;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.aporte-subtitle-block {
+  position: absolute;
+  top: 358px;
+  left: 125px;
+  width: 809px;
+  height: 181px;
+}
+
+.aporte-subtitle-line {
+  text-align: left;
+  font: italic normal 900 88px/86px Inter;
+  letter-spacing: -1.76px;
+  color: #1B1F28;
+  text-transform: uppercase;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.aporte-subtitle-line-first {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 732px;
+  height: 106px;
+}
+
+.aporte-subtitle-second-row {
+  position: absolute;
+  top: 75px;
+  left: 0;
+  display: flex;
+  align-items: baseline;
+  gap: 15px;
+}
+
+.aporte-subtitle-line-second {
+  width: 421px;
+  height: 106px;
+}
+
+.aporte-subtitle-italic {
+  width: 373px;
+  height: 106px;
+  text-align: left;
+  font: italic normal 900 88px/106px Inter;
+  letter-spacing: -1.76px;
+  color: #EC6726;
+  text-transform: uppercase;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.aporte-description-group {
+  position: absolute;
+  top: 358px;
+  left: 1118px;
+  width: 676px;
+  height: 194px;
+}
+
+.aporte-description-first-row {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  width: 676px;
+}
+
+.aporte-description {
+  width: auto;
+  height: 34px;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: 0px;
+  color: #1B1F28;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.aporte-description-connector {
+  width: auto;
+  height: 34px;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: 0px;
+  color: #1B1F28;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.aporte-description-text {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 661px;
+  height: 34px;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: 0px;
+  color: #1B1F28;
+  margin: 0;
+}
+
+.aporte-description-note {
+  position: absolute;
+  top: 160px;
+  left: 0;
+  width: 321px;
+  height: 34px;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: 0px;
+  color: #1B1F28;
+  margin: 0;
+}
+
+.aporte-projects-nav {
+  position: absolute;
+  top: 707px;
+  left: 0;
+  width: 1920px;
+  height: 124px;
+}
+
+.aporte-projects-nav-baseline {
+  position: absolute;
+  top: 78px;
+  left: 177px;
+  width: 1506px;
+  border-top: 1px solid rgba(192, 193, 199, 0.8);
+}
+
+.aporte-projects-nav-item {
+  position: absolute;
+  border: none;
+  background: transparent;
+  padding: 17px 0 0;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 28px;
+  letter-spacing: 0;
+  color: #1B1F28;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: transform 0.3s ease, opacity 0.3s ease, color 0.3s ease;
+}
+
+.aporte-projects-nav-item::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 78px;
+  width: 100%;
+  border-top: 6px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.aporte-projects-nav-item:hover::after,
+.aporte-projects-nav-item-active::after {
+  border-top-color: #D80E2B;
+}
+
+.aporte-projects-nav-item-casa {
+  top: 0;
+  left: 177px;
+  width: 356px;
+}
+
+.aporte-projects-nav-item-active {
+  font-weight: 700;
+  color: #D80E2B;
+}
+
+.aporte-projects-nav-item-skate {
+  top: 0;
+  left: 563px;
+  width: 195px;
+}
+
+.aporte-projects-nav-item-festirock {
+  top: 0;
+  left: 826px;
+  width: 127px;
+}
+
+.aporte-projects-nav-item-boulevard {
+  top: 0;
+  left: 1049px;
+  width: 341px;
+}
+
+.aporte-projects-nav-item-digital {
+  top: 0;
+  left: 1486px;
+  width: 197px;
+}
+
+.aporte-projects-content {
+  position: absolute;
+  top: 910px;
+  left: 0;
+  width: 1920px;
+  height: 565px;
+}
+
+.aporte-project-description {
+  position: absolute;
+  top: 158px;
+  left: 125px;
+  width: 607px;
+  height: 188px;
+}
+
+.aporte-project-description-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 607px;
+  height: 44px;
+  text-align: left;
+  font: normal normal bold 36px/48px Montserrat;
+  letter-spacing: 0px;
+  color: #1B1F28;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.aporte-project-description-text-normal {
+  font: normal normal normal 36px/48px Montserrat;
+  white-space: normal;
+  height: auto;
+}
+
+.aporte-project-description-title-strong {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.aporte-project-description-subtext {
+  position: absolute;
+  top: 58px;
+  left: 0;
+  width: 607px;
+  height: 188px;
+  text-align: left;
+  font: normal normal 36px/48px Montserrat;
+  letter-spacing: 0px;
+  color: #1B1F28;
+  margin: 0;
+}
+
+.aporte-project-content-transition {
+  animation: aporteProjectEnter 420ms ease;
+  will-change: opacity, transform;
+}
+
+@keyframes aporteProjectEnter {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.aporte-project-image {
+  position: absolute;
+  top: 0;
+  left: 882px;
+  width: 834px;
+  height: 503px;
+  background: transparent url('/images/SKATE.png') 0% 0% no-repeat padding-box;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #C0C1C7;
+  border-radius: 10px;
+}
+
+.aporte-project-image-mobile {
+  display: none;
+}
+
+.aporte-project-arrow {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 2;
+}
+
+.aporte-project-arrow-left {
+  top: 229.5px;
+  left: 822px;
+  background: #D9D9D9 0% 0% no-repeat padding-box;
+}
+
+.aporte-project-arrow-right {
+  top: 229.5px;
+  left: 1732px;
+  background: #E91E3A 0% 0% no-repeat padding-box;
+  border-radius: 50%;
+}
+
+.aporte-project-arrow:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(27, 31, 40, 0.18);
+}
+
+.aporte-project-arrow-icon {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-top: 3px solid #FFFFFF;
+  border-right: 3px solid #FFFFFF;
+}
+
+.aporte-project-arrow-icon-left {
+  transform: rotate(-135deg);
+}
+
+.aporte-project-arrow-icon-right {
+  transform: rotate(45deg);
+}
+
+@media (max-width: 1023px) {
+  .aporte-section {
+    width: 100vw;
+    height: auto;
+    margin-top: 0;
+    padding: 96px 24px 88px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center top;
+    overflow-x: hidden;
+  }
+
+  .aporte-heading {
+    position: static;
+    margin: 0 0 20px;
+    text-align: center;
+  }
+
+  .aporte-subtitle-block {
+    position: static;
+    width: min(100vw, 760px);
+    height: auto;
+    margin: 0 auto 32px;
+  }
+
+  .aporte-subtitle-line {
+    position: static;
+    width: auto;
+    height: auto;
+    font-size: clamp(48px, 7vw, 72px);
+    line-height: 0.95;
+    text-align: center;
+    white-space: normal;
+  }
+
+  .aporte-subtitle-line-first {
+    width: auto;
+  }
+
+  .aporte-subtitle-second-row {
+    position: static;
+    top: auto;
+    left: auto;
+    margin-top: 8px;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .aporte-subtitle-line-second {
+    width: auto;
+  }
+
+  .aporte-subtitle-italic {
+    width: auto;
+    height: auto;
+    font-size: clamp(48px, 7vw, 72px);
+    line-height: 0.95;
+    text-align: center;
+  }
+
+  .aporte-description-group {
+    position: static;
+    width: min(100vw, 760px);
+    height: auto;
+    margin: 0 auto 36px;
+    text-align: center;
+  }
+
+  .aporte-description-first-row {
+    position: static;
+    top: auto;
+    left: auto;
+    width: 100%;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .aporte-description,
+  .aporte-description-connector,
+  .aporte-description-text,
+  .aporte-description-note {
+    width: 100%;
+    height: auto;
+    font-size: clamp(20px, 2.6vw, 28px);
+    line-height: 1.45;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .aporte-description-text,
+  .aporte-description-note {
+    position: static;
+    top: auto;
+    left: auto;
+    margin-top: 8px;
+  }
+
+  .aporte-projects-nav {
+    position: static;
+    top: auto;
+    left: auto;
+    width: min(100vw, 1120px);
+    height: auto;
+    margin: 0 auto 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px 24px;
+  }
+
+  .aporte-projects-nav-baseline {
+    display: none;
+  }
+
+  .aporte-projects-nav-item {
+    position: static;
+    top: auto;
+    left: auto;
+    width: auto;
+    padding: 14px 0 8px;
+    font-size: clamp(18px, 2.2vw, 22px);
+    line-height: 1.2;
+  }
+
+  .aporte-projects-nav-item::after {
+    top: auto;
+    bottom: -8px;
+  }
+
+  .aporte-projects-nav-item-casa,
+  .aporte-projects-nav-item-skate,
+  .aporte-projects-nav-item-festirock,
+  .aporte-projects-nav-item-boulevard,
+  .aporte-projects-nav-item-digital {
+    width: auto;
+  }
+
+  .aporte-projects-content {
+    position: static;
+    top: auto;
+    left: auto;
+    width: min(100vw, 1120px);
+    height: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 44px minmax(0, 1fr) 44px;
+    grid-template-rows: auto auto;
+    column-gap: 12px;
+    row-gap: 20px;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .aporte-project-description {
+    position: static;
+    top: auto;
+    left: auto;
+    width: 100%;
+    max-width: 760px;
+    height: auto;
+    grid-column: 1 / -1;
+    grid-row: 1;
+    justify-self: center;
+  }
+
+  .aporte-project-description-text {
+    position: static;
+    top: auto;
+    left: auto;
+    width: 100%;
+    height: auto;
+    font-size: clamp(22px, 3.2vw, 34px);
+    line-height: 1.35;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .aporte-project-description-text-normal {
+    white-space: normal;
+  }
+
+  .aporte-project-description-subtext {
+    position: static;
+    top: auto;
+    left: auto;
+    width: 100%;
+    height: auto;
+    margin-top: 12px;
+    font-size: clamp(18px, 2.6vw, 26px);
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  .aporte-project-image {
+    display: none;
+  }
+
+  .aporte-project-image-mobile {
+    display: block;
+    grid-column: 2;
+    grid-row: 2;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border: 1px solid #C0C1C7;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .aporte-project-arrow {
+    position: static;
+    width: 44px;
+    height: 44px;
+    margin: 0;
+  }
+
+  .aporte-project-arrow-left {
+    top: auto;
+    left: auto;
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .aporte-project-arrow-right {
+    top: auto;
+    left: auto;
+    grid-column: 3;
+    grid-row: 2;
+  }
+
+  .aporte-project-arrow:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .aporte-section {
+    width: 100vw;
+    padding: 72px 16px 72px;
+  }
+
+  .aporte-heading {
+    margin-bottom: 14px;
+  }
+
+  .aporte-subtitle-block {
+    width: min(100vw, 620px);
+    margin-bottom: 24px;
+  }
+
+  .aporte-subtitle-line,
+  .aporte-subtitle-italic {
+    font-size: clamp(34px, 10vw, 48px);
+  }
+
+  .aporte-description-group {
+    width: min(100vw, 620px);
+    margin-bottom: 28px;
+  }
+
+  .aporte-description,
+  .aporte-description-connector,
+  .aporte-description-text,
+  .aporte-description-note {
+    font-size: clamp(18px, 4.2vw, 22px);
+    line-height: 1.35;
+  }
+
+  .aporte-projects-nav {
+    width: min(100vw, 620px);
+    gap: 10px 16px;
+    margin-bottom: 28px;
+  }
+
+  .aporte-projects-nav-item {
+    font-size: 16px;
+  }
+
+  .aporte-projects-content {
+    width: min(100vw, 620px);
+    grid-template-columns: 36px minmax(0, 1fr) 36px;
+    column-gap: 8px;
+    row-gap: 16px;
+  }
+
+  .aporte-project-description-text {
+    font-size: clamp(20px, 5.6vw, 28px);
+  }
+
+  .aporte-project-description-subtext {
+    font-size: 16px;
+  }
+}

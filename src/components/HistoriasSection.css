@@ -1,0 +1,31 @@
+.historias-section {
+  position: relative;
+  width: 100%;
+  height: 822px;
+  background: #EC6726;
+  overflow: visible;
+  z-index: 2;
+}
+
+.historias-image {
+  position: absolute;
+  top: 261px;
+  left: 342px;
+  width: 1237px;
+  height: 675px;
+  background: transparent url('/images/grupo.png') 0% 0% no-repeat padding-box;
+}
+
+.historias-text {
+  position: absolute;
+  top: 89px;
+  left: 474px;
+  width: 970px;
+  height: 146px;
+  text-align: center;
+  font: italic normal 900 64px/69px Inter;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin: 0;
+}

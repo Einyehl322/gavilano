@@ -1,0 +1,106 @@
+.image-section {
+  position: relative;
+  width: 100%;
+  height: 985px;
+  z-index: 2;
+  background: #ec6726 url('/images/parallax.png') center / cover no-repeat fixed;
+  overflow: visible;
+}
+
+.image-section-portrait {
+  position: absolute;
+  top: 108px;
+  left: 60px;
+  width: 950px;
+  height: auto;
+  display: block;
+  z-index: 1;
+}
+
+.image-section-copy {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  color: #ffffff;
+  text-align: left;
+}
+
+.image-section-kicker {
+  position: absolute;
+  top: 114px;
+  left: 1333px;
+  width: 437px;
+  height: 29px;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 1.92px;
+  color: #ffffff;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.image-section-kicker::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 16px);
+  width: 134px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.75);
+  transform: translateY(-50%);
+}
+
+.image-section-title {
+  position: absolute;
+  top: 250px;
+  left: 1022px;
+  width: 757px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: 'Inter', sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.image-section-title-primary {
+  display: block;
+  width: 708px;
+  height: 141px;
+  font-size: 117px;
+  font-weight: 700;
+  line-height: 141px;
+  letter-spacing: -2.34px;
+  white-space: nowrap;
+}
+
+.image-section-title-secondary {
+  display: block;
+  width: 753px;
+  height: 256px;
+  font-family: 'Inter', sans-serif;
+  font-size: 117px;
+  font-weight: 700;
+  line-height: 115px;
+  letter-spacing: -2.34px;
+  color: #ffffff;
+}
+
+.image-section-title-subtitle {
+  display: block;
+  width: 757px;
+  height: 80px;
+  font-family: 'Inter', sans-serif;
+  font-size: 66px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 80px;
+  letter-spacing: -1.32px;
+  color: #ffffff;
+  white-space: nowrap;
+  margin-top: -10px;
+}

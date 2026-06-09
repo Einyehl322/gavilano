@@ -1,0 +1,27 @@
+import './ImageSection.css'
+
+function ImageSection() {
+  return (
+    <section className="image-section" aria-labelledby="image-section-title">
+      <img
+        src="/images/gavilanoo.png"
+        alt="Gavilano"
+        className="image-section-portrait"
+      />
+
+      <div className="image-section-copy">
+        <p className="image-section-kicker">Experiencia que construye</p>
+        <h2 className="image-section-title" id="image-section-title">
+          <span className="image-section-title-primary">Más de dos</span>
+          <span className="image-section-title-secondary">
+            décadas de<br />
+            experiencia
+          </span>
+          <span className="image-section-title-subtitle">En gestión municipal</span>
+        </h2>
+      </div>
+    </section>
+  )
+}
+
+export default ImageSection

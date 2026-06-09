@@ -1,0 +1,107 @@
+.hero {
+  position: relative;
+  height: 980px;
+  background: transparent url('/images/PT_WEB_01.png') 0% 0% no-repeat padding-box;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.hero-content {
+  position: absolute;
+  top: 71px;
+  left: 1014px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 800;
+  font-size: 160px;
+  line-height: 157px;
+  letter-spacing: -3.2px;
+  color: #1B1F28;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.hero-subtitle {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 800;
+  font-size: 385px;
+  line-height: 300px;
+  letter-spacing: 1.93px;
+  color: #D90B2A;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: -8px;
+}
+
+.hero-subtitle2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 800;
+  font-size: 279px;
+  line-height: 245px;
+  letter-spacing: 1.4px;
+  color: #D90B2A;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: -18px;
+}
+
+.hero-button {
+  position: absolute;
+  top: 807px;
+  left: 1018px;
+  width: 312px;
+  height: 90px;
+  background: #1B1F28 0% 0% no-repeat padding-box;
+  border-radius: 6px;
+  border: none;
+  color: #FFFFFF;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.hero-button:hover {
+  background: #333844;
+}
+
+.hero-button-text {
+  display: inline-block;
+}
+
+.hero-button-icon {
+  display: block;
+  width: 17px;
+  height: 15px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.hero-button:hover .hero-button-icon {
+  transform: translateX(5px);
+}
+
+.hero-badge {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 64px;
+  height: 64px;
+  background: transparent url('/images/Grupo 28410.png') 0% 0% no-repeat padding-box;
+  opacity: 1;
+  pointer-events: none;
+  z-index: 900;
+}

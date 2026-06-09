@@ -1,0 +1,207 @@
+.propuestas-detalle-section {
+  position: relative;
+  width: 100%;
+  height: 850px;
+  background: #FFFFFF;
+}
+
+.propuestas-detalle-left-column {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 600px;
+  height: 850px;
+  display: flex;
+  flex-direction: column;
+  background: #EC6727;
+}
+
+.propuestas-detalle-block {
+  position: relative;
+  width: 600px;
+  height: 170px;
+  flex: 0 0 170px;
+  display: grid;
+  grid-template-columns: 62px 1fr;
+  column-gap: 24px;
+  align-items: center;
+  justify-content: start;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.propuestas-detalle-block + .propuestas-detalle-block {
+  margin-top: -1px;
+}
+
+.propuestas-detalle-block:hover {
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+.propuestas-detalle-block::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #e04a01;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.propuestas-detalle-block:hover::before {
+  opacity: 1;
+}
+
+.propuestas-detalle-block > * {
+  position: relative;
+  z-index: 1;
+}
+
+.propuestas-detalle-educacion {
+  background: #E04A01;
+  padding-left: 40px;
+  box-sizing: border-box;
+}
+
+.propuestas-detalle-juventud {
+  background: #EC6727;
+  padding-left: 40px;
+  box-sizing: border-box;
+}
+
+.propuestas-detalle-seguridad {
+  background: #EC6727;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.propuestas-detalle-desarrollo {
+  background: #EC6727;
+  padding-left: 40px;
+  box-sizing: border-box;
+}
+
+.propuestas-detalle-modernizacion {
+  background: #EC6727;
+  padding-left: 40px;
+  box-sizing: border-box;
+}
+
+.propuestas-detalle-right-title {
+  position: absolute;
+  top: 64px;
+  left: 670px;
+  width: 478px;
+  height: 39px;
+  text-align: left;
+  font: italic normal 900 35px/31px Inter;
+  letter-spacing: 0px;
+  color: #EC6726;
+  text-transform: uppercase;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.propuestas-detalle-right-desc {
+  position: absolute;
+  top: 113px;
+  left: 670px;
+  width: 586px;
+  height: 103px;
+  text-align: left;
+  font: normal normal normal 18px/30px Montserrat;
+  letter-spacing: 0px;
+  color: #1B1F28;
+  margin: 0;
+}
+
+.propuestas-detalle-line {
+  position: absolute;
+  top: 262px;
+  left: 670px;
+  width: 586px;
+  border-top: 2px solid #C0C1C7;
+}
+
+.propuestas-detalle-descripcion {
+  position: absolute;
+  top: 304px;
+  left: 670px;
+  width: 586px;
+  height: auto;
+  text-align: left;
+  font: normal normal normal 18px/30px Montserrat;
+  letter-spacing: 0px;
+  color: #1B1F28;
+  margin: 0;
+}
+
+.propuestas-detalle-descripcion strong {
+  font-weight: 700;
+}
+
+.propuestas-detalle-image {
+  position: absolute;
+  top: 80px;
+  left: 1326px;
+  width: 524px;
+  height: 680px;
+  background: transparent url('/images/tombos.png') 0% 0% no-repeat padding-box;
+  background-size: cover;
+}
+
+.propuestas-detalle-image:hover {
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+.propuestas-detalle-right-desc strong {
+  font-weight: 700;
+}
+
+.propuestas-detalle-block-title {
+  width: 100%;
+  font: normal normal 600 27px/30px Montserrat;
+  text-align: left;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.propuestas-detalle-icon {
+  width: 62px;
+  height: 62px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-shrink: 0;
+}
+
+.propuestas-detalle-icon-educacion {
+  background-image: url('/images/educacion.png');
+}
+
+.propuestas-detalle-icon-juventud {
+  background-image: url('/images/juventud.png');
+}
+
+.propuestas-detalle-icon-seguridad {
+  background-image: url('/images/seguridad.png');
+}
+
+.propuestas-detalle-icon-desarrollo {
+  background-image: url('/images/desarrollo.png');
+}
+
+.propuestas-detalle-icon-tecnologia {
+  background-image: url('/images/tecnologia.png');
+  opacity: 0.5;
+}
+
+.propuestas-detalle-modernizacion .propuestas-detalle-block-title {
+  white-space: nowrap;
+  font-size: 26px;
+}

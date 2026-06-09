@@ -1,0 +1,90 @@
+.propuestas-section {
+  position: relative;
+  width: 100%;
+  height: 765px;
+  background: #FFFFFF;
+}
+
+.propuestas-text {
+  position: absolute;
+  top: 209px;
+  left: 124px;
+  white-space: nowrap;
+  text-align: left;
+  font: normal normal 600 24px/29px Montserrat;
+  letter-spacing: 1.92px;
+  color: #111727;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.propuestas-subtitle-block {
+  position: absolute;
+  top: 282px;
+  left: 125px;
+  width: 751px;
+  height: 278px;
+}
+
+.propuestas-subtitle-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 751px;
+  text-align: left;
+  font: normal normal 900 88px/86px Inter;
+  letter-spacing: -1.76px;
+  color: #1B1F28;
+  text-transform: uppercase;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.propuestas-subtitle-line-2 {
+  top: 96px;
+}
+
+.propuestas-subtitle-line-3 {
+  top: 192px;
+}
+
+.propuestas-subtitle-italic {
+  position: absolute;
+  top: 565px;
+  left: 125px;
+  width: 582px;
+  text-align: left;
+  font: italic normal 900 88px/106px Inter;
+  letter-spacing: -1.76px;
+  color: #EC6726;
+  text-transform: uppercase;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.propuestas-description-block {
+  position: absolute;
+  top: 322px;
+  left: 1122px;
+  width: 760px;
+  height: 284px;
+}
+
+.propuestas-description-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 760px;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 39px;
+  line-height: 51px;
+  letter-spacing: 0px;
+  color: #1B1F28;
+  margin: 0;
+}
+
+.propuestas-description-text strong {
+  font-weight: 700;
+}

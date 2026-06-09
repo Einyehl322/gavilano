@@ -1,0 +1,302 @@
+.sumate-section {
+  position: relative;
+  width: 1920px;
+  height: 958px;
+  background: transparent;
+  margin-top: -6px;
+  overflow: hidden;
+}
+
+.sumate-parallax {
+  position: absolute;
+  bottom: 0;
+  left: 0.3008303642272949px;
+  width: 1920px;
+  height: 958px;
+  background: transparent url('/images/parallax.png') 50% 50% no-repeat padding-box;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  opacity: 1;
+  pointer-events: none;
+}
+
+.sumate-heading {
+  position: absolute;
+  top: 221px;
+  left: 123px;
+  width: 114px;
+  height: 29px;
+  white-space: nowrap;
+  text-align: left;
+  font: normal normal 600 24px/29px Montserrat;
+  letter-spacing: 1.92px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.sumate-subtitle-block {
+  position: absolute;
+  top: 299px;
+  left: 123px;
+  width: 715px;
+  height: 276px;
+}
+
+.sumate-subtitle-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 715px;
+  height: 106px;
+  text-align: left;
+  font: normal normal 900 88px/85px Inter;
+  letter-spacing: -1.76px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.sumate-subtitle-line-2 {
+  top: 87px;
+}
+
+.sumate-subtitle-italic {
+  position: absolute;
+  top: 174px;
+  left: 0;
+  width: 434px;
+  height: 106px;
+  text-align: left;
+  font: italic normal 900 88px/85px Inter;
+  letter-spacing: -1.76px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.sumate-desc-block {
+  position: absolute;
+  top: 580px;
+  left: 123px;
+  width: 516px;
+  height: 160px;
+}
+
+.sumate-desc-title {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 280px;
+  height: 27px;
+  text-align: left;
+  font: normal normal bold 22px/32px Montserrat;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.sumate-white-box {
+  position: absolute;
+  top: 120px;
+  left: 972px;
+  width: 710px;
+  height: 717px;
+  background: #FFFFFF;
+  opacity: 1;
+  z-index: 1;
+  animation: sumateWhiteBoxEnter 900ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  will-change: opacity, transform;
+}
+
+.sumate-box-label {
+  position: absolute;
+  width: auto;
+  height: 16px;
+  text-align: left;
+  font: normal normal normal 13px/16px Montserrat;
+  letter-spacing: 1.04px;
+  color: #1B1F28;
+  text-transform: uppercase;
+  margin: 0;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.sumate-box-divider {
+  position: absolute;
+  top: 130px;
+  height: 1px;
+  background: rgba(192, 193, 199, 0.5);
+}
+
+.sumate-box-label-sm {
+  position: absolute;
+  width: auto;
+  height: 15px;
+  text-align: left;
+  font: normal normal normal 12px/15px Montserrat;
+  letter-spacing: 0.96px;
+  color: #1B1F28;
+  text-transform: uppercase;
+  margin: 0;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.sumate-box-value {
+  position: absolute;
+  width: auto;
+  height: 16px;
+  text-align: left;
+  font: normal normal normal 13px/16px Montserrat;
+  letter-spacing: 1.04px;
+  color: #1B1F28;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.sumate-box-placeholder-sm {
+  position: absolute;
+  width: auto;
+  height: 16px;
+  text-align: left;
+  font: normal normal normal 13px/16px Montserrat;
+  letter-spacing: 1.04px;
+  color: #1B1F2899;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.sumate-box-placeholder {
+  position: absolute;
+  width: auto;
+  height: 16px;
+  text-align: left;
+  font: normal normal normal 13px/16px Montserrat;
+  letter-spacing: 1.04px;
+  color: #1B1F2899;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.sumate-box-placeholder::placeholder,
+.sumate-box-placeholder-sm::placeholder,
+.sumate-box-textarea::placeholder {
+  color: #1B1F2899;
+  text-transform: uppercase;
+}
+
+.sumate-box-placeholder,
+.sumate-box-placeholder-sm,
+.sumate-box-value {
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  cursor: text;
+}
+
+.sumate-box-select {
+  cursor: pointer;
+}
+
+.sumate-box-textarea {
+  height: 96px;
+  resize: none;
+  overflow: hidden;
+  white-space: normal;
+  line-height: 16px;
+}
+
+.sumate-box-placeholder:focus-visible,
+.sumate-box-placeholder-sm:focus-visible,
+.sumate-box-value:focus-visible {
+  outline: 2px solid rgba(217, 11, 42, 0.22);
+  outline-offset: 4px;
+}
+
+.sumate-box-select:required:invalid {
+  color: #1B1F2899;
+}
+
+.sumate-box-select option {
+  color: #1B1F28;
+}
+
+.sumate-box-button-icon {
+  width: 17px;
+  height: 15px;
+  object-fit: contain;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.sumate-box-button {
+  position: absolute;
+  top: 620px;
+  left: 46px;
+  width: 320px;
+  height: 64px;
+  background: #1B1F28;
+  border: none;
+  border-radius: 6px;
+  color: #FFFFFF;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 22px;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.sumate-box-button:hover .sumate-box-button-icon {
+  transform: translateX(5px);
+}
+
+@keyframes sumateWhiteBoxEnter {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sumate-white-box {
+    animation: none;
+  }
+
+  .sumate-box-button-icon {
+    transition: none;
+  }
+}
+
+.sumate-desc-text {
+  position: absolute;
+  top: 96px;
+  left: 0;
+  width: 516px;
+  text-align: left;
+  font: normal normal normal 22px/32px Montserrat;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  margin: 0;
+}
