@@ -48,3 +48,32 @@ body {
   margin: 0 auto;
   min-height: 100svh;
 }
+
+@media (max-width: 1023px) {
+  html {
+    scroll-padding-top: 88px;
+  }
+
+  section[id] {
+    scroll-margin-top: 88px;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  #root {
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+  }
+
+  .about-heading::before,
+  .agenda-heading::before,
+  .aporte-heading::before,
+  .propuestas-text::before,
+  .articulos-heading::before,
+  .sumate-heading::before {
+    display: none;
+  }
+}

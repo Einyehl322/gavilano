@@ -75,6 +75,10 @@
   border-radius: 10px;
 }
 
+.about-stats-mobile {
+  display: none;
+}
+
 .about-stat-icon {
   justify-self: center;
   align-self: center;

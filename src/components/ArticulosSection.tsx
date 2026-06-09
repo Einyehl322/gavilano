@@ -3,7 +3,7 @@ import { asset } from '../utils/asset'
 
 const articles = [
   {
-    image: 'tombitos.png',
+    image: 'oficiales.png',
     titleBefore: 'Seguridad como Cimiento del Desarrollo: ',
     titleBold: 'La historia del cuerpo de Serenazgo Municipal',
     desc: 'Es un error común pensar que la seguridad es un fin en sí mismo. En realidad, es el suelo sobre el cual se construye todo lo demás.',

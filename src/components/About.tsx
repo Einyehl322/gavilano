@@ -40,6 +40,15 @@ function About() {
             </div>
           ))}
         </div>
+        <div className="about-stats-mobile" aria-label="Resumen de experiencia">
+          {stats.map((stat, i) => (
+            <div key={`mobile-stat-${stat.title}`} className="about-stat-mobile-card">
+              <img src={stat.icon} alt="" className="about-stat-mobile-icon" style={{ width: iconSizes[i].width, height: iconSizes[i].height }} />
+              <p className="about-stat-mobile-title">{stat.title}</p>
+              <p className="about-stat-mobile-desc" dangerouslySetInnerHTML={{ __html: stat.desc }} />
+            </div>
+          ))}
+        </div>
         <button className="about-button">
           <span className="about-button-text">CONOCE MI HISTORIA</span>
           <img src={asset('Trazado88.png')} alt="" className="about-button-icon" />
