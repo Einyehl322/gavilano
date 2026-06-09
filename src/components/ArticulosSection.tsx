@@ -1,4 +1,5 @@
 import './ArticulosSection.css'
+import { asset } from '../utils/asset'
 
 const articles = [
   {
@@ -44,7 +45,7 @@ function ArticulosSection() {
           <div key={i}>
             <div className="articulos-divider" style={{ top: i === 2 ? base - 50 : base - 20 }} />
             <div className="articulos-card-bg" style={{ top: base }} />
-            <div className="articulos-image" style={{ top: base, backgroundImage: `url(/images/${article.image})` }} />
+            <div className="articulos-image" style={{ top: base, backgroundImage: `url(${asset(article.image)})` }} />
             <p className="articulos-analisis" style={{ top: base + 63 }}>ANÁLISIS</p>
             <p className="articulos-title" style={{ top: base + (i === 1 ? -6 : i === 2 ? -31 : 0) }}>
               <span className="articulos-title-red">{article.titleBefore}</span>

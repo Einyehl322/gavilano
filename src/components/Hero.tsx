@@ -1,4 +1,5 @@
 import './Hero.css'
+import { asset } from '../utils/asset'
 
 function Hero() {
   return (
@@ -10,7 +11,7 @@ function Hero() {
       </div>
       <button className="hero-button">
         <span className="hero-button-text">CONOCE MI HISTORIA</span>
-        <img src="/images/Trazado88.png" alt="" className="hero-button-icon" />
+        <img src={asset('Trazado88.png')} alt="" className="hero-button-icon" />
       </button>
       <div className="hero-badge" aria-hidden="true" />
     </section>

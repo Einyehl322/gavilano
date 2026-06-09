@@ -1,4 +1,5 @@
 import './Footer.css'
+import { asset } from '../utils/asset'
 
 const linkColumns = [
   [
@@ -58,12 +59,12 @@ function Footer() {
 
         <div className="footer-qr" aria-label="QR code">
           <div className="footer-qr-box">
-            <img src="/images/qr.png" alt="QR" className="footer-qr-image" />
+            <img src={asset('qr.png')} alt="QR" className="footer-qr-image" />
           </div>
         </div>
 
         <button className="scroll-top" type="button" onClick={scrollToTop} aria-label="Volver arriba">
-          <img src="/images/flechaaup.png" alt="" className="scroll-top-image" />
+          <img src={asset('flechaaup.png')} alt="" className="scroll-top-image" />
         </button>
       </div>
     </footer>

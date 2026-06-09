@@ -1,4 +1,5 @@
 import './About.css'
+import { asset } from '../utils/asset'
 
 const iconSizes = [
   { width: 41, height: 30 },
@@ -8,10 +9,10 @@ const iconSizes = [
 ]
 
 const stats = [
-  { title: 'Más obras', desc: 'para mejorar<br />nuestra ciudad', icon: '/images/Trazado 14386.png' },
-  { title: 'Más seguridad', desc: 'para vivir con tranquilidad', icon: '/images/Trazado 14387.png' },
-  { title: 'Más oportunidades', desc: 'para nuestros jovenes<br /> y familias', icon: '/images/Trazado 14388.png' },
-  { title: 'Más salud', desc: 'para una vida<br />digna', icon: '/images/Trazado 14389.png' },
+  { title: 'Más obras', desc: 'para mejorar<br />nuestra ciudad', icon: asset('Trazado 14386.png') },
+  { title: 'Más seguridad', desc: 'para vivir con tranquilidad', icon: asset('Trazado 14387.png') },
+  { title: 'Más oportunidades', desc: 'para nuestros jovenes<br /> y familias', icon: asset('Trazado 14388.png') },
+  { title: 'Más salud', desc: 'para una vida<br />digna', icon: asset('Trazado 14389.png') },
 ]
 
 function About() {
@@ -41,10 +42,10 @@ function About() {
         </div>
         <button className="about-button">
           <span className="about-button-text">CONOCE MI HISTORIA</span>
-          <img src="/images/Trazado88.png" alt="" className="about-button-icon" />
+          <img src={asset('Trazado88.png')} alt="" className="about-button-icon" />
         </button>
       </div>
-      <img src="/images/IMG_0040.png" alt="" className="about-image" />
+      <img src={asset('IMG_0040.png')} alt="" className="about-image" />
     </section>
   )
 }

@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './AporteSection.css'
+import { asset } from '../utils/asset'
 
 type Proyecto = {
   id: number
@@ -27,7 +28,7 @@ const proyectos: Proyecto[] = [
     tituloCompleto: 'Un espacio digno para cuidar, acompañar y reconocer a quienes hicieron historia en Carmen.',
     tituloTop: 48,
     tituloWidth: 611,
-    imagen: '/images/personas/senoras.png',
+    imagen: asset('personas/senoras.png'),
     navClass: 'aporte-projects-nav-item-casa',
   },
   {
@@ -38,7 +39,7 @@ const proyectos: Proyecto[] = [
     tituloSuffixLines: ['practiquen deporte, se expresen', 'y usen mejor su tiempo libre.'],
     tituloBreakAfterPrefix: true,
     descripcion: '',
-    imagen: '/images/SKATE.png',
+    imagen: asset('SKATE.png'),
     navClass: 'aporte-projects-nav-item-skate',
     tituloTop: 86,
     tituloWidth: 640,
@@ -50,7 +51,7 @@ const proyectos: Proyecto[] = [
     tituloPrefix: 'Arte, música y cultura',
     tituloSuffix: ' para promover el talento de nuestros jóvenes.',
     descripcion: '',
-    imagen: '/images/Imagen 876.png',
+    imagen: asset('Imagen 876.png'),
     navClass: 'aporte-projects-nav-item-festirock',
     tituloTop: 48,
     tituloWidth: 576,
@@ -62,7 +63,7 @@ const proyectos: Proyecto[] = [
     tituloPrefix: 'Espacios públicos recuperados',
     tituloSuffix: ' para caminar, encontrarnos y vivir mejor el distrito.',
     descripcion: '',
-    imagen: '/images/Imagen 007.png',
+    imagen: asset('Imagen 007.png'),
     navClass: 'aporte-projects-nav-item-boulevard',
     tituloTop: 48,
     tituloWidth: 607,
@@ -72,7 +73,7 @@ const proyectos: Proyecto[] = [
     nombre: 'Carmen Digital',
     titulo: 'Tecnología y modernización',
     descripcion: 'Para acercar la municipalidad al vecino y simplificar cada trámite.',
-    imagen: '/images/Imagen 1022.png',
+    imagen: asset('Imagen 1022.png'),
     navClass: 'aporte-projects-nav-item-digital',
   },
 ]

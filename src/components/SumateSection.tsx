@@ -1,4 +1,5 @@
 import './SumateSection.css'
+import { asset } from '../utils/asset'
 
 function SumateSection() {
   return (
@@ -40,7 +41,7 @@ function SumateSection() {
         <label className="sumate-box-label-sm" htmlFor="sumate-mensaje" style={{ left: 50, top: 385 }}>MENSAJE OPCIONAL</label>
         <textarea id="sumate-mensaje" name="mensaje" className="sumate-box-value sumate-box-textarea" style={{ left: 50, top: 426, width: 620 }} placeholder="Cuéntanos cómo te gustaría sumarte" />
         <div className="sumate-box-divider" style={{ left: 46, top: 560, width: 620 }} />
-        <button className="sumate-box-button" type="submit">QUIERO SUMARME <img src="/images/Trazado88.png" alt="" className="sumate-box-button-icon" /></button>
+        <button className="sumate-box-button" type="submit">QUIERO SUMARME <img src={asset('Trazado88.png')} alt="" className="sumate-box-button-icon" /></button>
       </form>
     </section>
   )

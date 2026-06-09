@@ -1,10 +1,11 @@
 import './ImageSection.css'
+import { asset } from '../utils/asset'
 
 function ImageSection() {
   return (
     <section className="image-section" aria-labelledby="image-section-title">
       <img
-        src="/images/gavilanoo.png"
+        src={asset('gavilanoo.png')}
         alt="Gavilano"
         className="image-section-portrait"
       />
