@@ -1,0 +1,29 @@
+name: Deploy
+
+# Deploy GATED de gavilano a vps2 (juandediosgavilano.com), estilo edwards.
+# Cada push a main: build (base '/') + rsync de dist/ al docroot que sirve nginx.
+# Corre en el runner self-hosted de gavilano en vps2. Reemplaza el deploy a GitHub Pages.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-gavilano
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    permissions:
+      contents: read
+      checks: read
+    uses: Goberna-Lab/platform/.github/workflows/deploy-rsync-reusable.yml@v1.0.0
+    secrets: inherit
+    with:
+      runs-on: '["self-hosted","gavilano"]'           # runner vps2-gavilano-runner
+      docroot: /srv/nexus-containers/gavilano/public
+      package-manager: npm
+      build-cmd: npm run build                         # base '/' por default (dominio raíz)
+      dist-dir: dist
+      require-ci: false                                # SPA sin suite de tests; el gate es el build
+      sha: ${{ github.sha }}

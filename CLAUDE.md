@@ -9,10 +9,12 @@ Sitio/SPA de Goberna-Lab. Parte del ecosistema de agentes Goberna (ver más abaj
 - **Sin backend, sin base de datos.** Es 100% frontend estático.
 
 ## Deploy
-- **`main` → GitHub Pages** (workflow `deploy-pages.yml`, runner GitHub-hosted). No hay VPS.
-- El deploy hace **lint + build** antes de publicar; si fallan, NO se deploya.
-- Base path de Pages: `VITE_BASE_PATH=/gavilano/` (subpath del dominio de Pages) — **no rompas las
-  rutas de assets** (usá rutas relativas / el base de Vite), o el sitio carga en blanco en Pages.
+- **`main` → vps2** (`juandediosgavilano.com`), por **rsync** del build a nginx (igual que edwardsinfante).
+  Pipeline gated vía `Goberna-Lab/platform` (reusable rsync, pinned `@v1.0.0`): build (`base '/'`) →
+  guard de dist-vacío → `rsync --delete` al docroot `/srv/nexus-containers/gavilano/public`.
+- Corre en el runner self-hosted **`vps2-gavilano-runner`** (label `gavilano`). NO usa GitHub Pages.
+- DNS en Cloudflare (proxied, SSL flexible) → vps2. Base path = `/` (dominio raíz): NO setees
+  `VITE_BASE_PATH`, o los assets quedan en `/gavilano/` y el sitio carga en blanco.
 
 ## Flujo de trabajo
 - **`main` = producción** (lo que se ve en Pages). **No pushees directo a `main`**: rama feature + PR.

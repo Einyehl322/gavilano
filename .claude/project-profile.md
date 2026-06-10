@@ -23,9 +23,10 @@ para adaptarse a este repo.
 | `src/App.tsx` · `src/main.tsx` | Composición raíz de la app. |
 
 ## Deploy
-- `main` → **GitHub Pages** (runner GitHub-hosted). Deploy hace **lint + build** antes de publicar.
-- Base path `/gavilano/` (subpath de Pages) — cuidado con rutas de assets (`src/utils/asset.ts`).
-- **PRs corren CI** (lint + typecheck + build) antes de mergear.
+- `main` → **vps2** (`juandediosgavilano.com`), por **rsync** del build a nginx (estilo edwards).
+  Pipeline gated vía `deploy-rsync-reusable@v1.0.0`: build (`base '/'`) + guard dist-vacío + rsync
+  `--delete` al docroot `/srv/nexus-containers/gavilano/public`. Runner `vps2-gavilano-runner`.
+- DNS Cloudflare (proxied, SSL flexible) → vps2. **PRs corren CI** (lint + build) antes de mergear.
 
 ## Supervisor: **LITE** — repo chico, 1 dev nuevo. Sin DB ni contrato, el riesgo real es solo dos
 ramas tocando el CSS global o `vite.config.ts`/`index.html` a la vez. Corré el supervisor si el
