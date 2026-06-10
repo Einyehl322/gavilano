@@ -15,7 +15,6 @@ function Hero() {
         <span className="hero-button-text">CONOCE MI HISTORIA</span>
         <img src={asset('Trazado88.png')} alt="" className="hero-button-icon" />
       </a>
-      <div className="hero-badge" aria-hidden="true" />
     </section>
   )
 }

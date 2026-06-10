@@ -26,10 +26,6 @@ function ArticlesPage() {
             </h1>
             <p className="articles-page-copy">Infórmate sobre lo que pasa en el distrito</p>
           </div>
-
-          <Link to="/#sumate" className="articles-page-whatsapp" aria-label="Abrir contacto por WhatsApp">
-            <img src={asset('whatsapp.svg')} alt="" aria-hidden="true" className="articles-page-whatsapp-icon" />
-          </Link>
         </section>
 
         <section className="articles-grid" aria-label="Listado de artículos">

@@ -109,18 +109,6 @@
   transform: translateX(5px);
 }
 
-.hero-badge {
-  position: fixed;
-  right: 24px;
-  bottom: 24px;
-  width: 64px;
-  height: 64px;
-  background: transparent url('/images/Grupo 28410.png') 0% 0% no-repeat padding-box;
-  opacity: 1;
-  pointer-events: none;
-  z-index: 900;
-}
-
 @media (max-width: 1024px) {
   .hero {
     height: clamp(720px, calc(100svh - 76px), 852px);
@@ -191,16 +179,6 @@
     transform: none;
   }
 
-  .hero-badge {
-    display: block;
-    position: absolute;
-    right: 18px;
-    bottom: 18px;
-    width: 50px;
-    height: 50px;
-    background-size: contain;
-    z-index: 20;
-  }
 }
 
 @media (max-width: 480px) {
