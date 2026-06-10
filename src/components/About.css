@@ -142,6 +142,7 @@
   line-height: 24px;
   letter-spacing: 0px;
   text-transform: uppercase;
+  text-decoration: none;
   cursor: pointer;
   transition: background 0.3s;
   justify-content: center;

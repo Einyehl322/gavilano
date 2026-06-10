@@ -49,10 +49,10 @@ function About() {
             </div>
           ))}
         </div>
-        <button className="about-button">
+        <a className="about-button" href="#biografia">
           <span className="about-button-text">CONOCE MI HISTORIA</span>
           <img src={asset('Trazado88.png')} alt="" className="about-button-icon" />
-        </button>
+        </a>
       </div>
       <img src={asset('IMG_0040.png')} alt="" className="about-image" />
     </section>
