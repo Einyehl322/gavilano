@@ -55,7 +55,6 @@
   letter-spacing: 0;
   color: #ffffff;
   text-transform: capitalize;
-  opacity: 0.5;
 }
 
 .footer-links-label {
@@ -116,7 +115,8 @@
   text-decoration: none;
   font: inherit;
   line-height: 32px;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.5;
+  transition: transform 0.3s ease, opacity 0.3s ease, color 0.3s ease;
 }
 
 .footer-links a:hover {

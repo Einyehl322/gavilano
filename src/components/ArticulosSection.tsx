@@ -1,28 +1,10 @@
 import './ArticulosSection.css'
+import { Link } from 'react-router-dom'
 import { asset } from '../utils/asset'
-
-const articles = [
-  {
-    image: 'oficiales.png',
-    titleBefore: 'Seguridad como Cimiento del Desarrollo: ',
-    titleBold: 'La historia del cuerpo de Serenazgo Municipal',
-    desc: 'Es un error común pensar que la seguridad es un fin en sí mismo. En realidad, es el suelo sobre el cual se construye todo lo demás.',
-  },
-  {
-    image: 'alcalde..png',
-    titleBefore: 'Educación y Tecnología: ',
-    titleBold: 'Apostando por el futuro de los estudiantes carmelinos',
-    desc: 'En un distrito como el nuestro, Carmen de la Legua Reynoso, la escuela no puede ser solo un lugar de tránsito; debe ser el centro de una transformación real.',
-  },
-  {
-    image: 'trazado.png',
-    titleBefore: 'Seguridad Digital: ',
-    titleBold: 'El Cimiento Tecnológico que Transformó Carmen de la Legua Reynoso',
-    desc: 'Hubo un tiempo en que hablar de "Internet inalámbrico" en una plaza pública parecía una idea extraída de una novela de ciencia ficción, especialmente para un distrito con los desafíos de Carmen de la Legua Reynoso.',
-  },
-]
+import { articles } from '../data/articles'
 
 const cardBases = [520, 819, 1118]
+const featuredArticles = articles.slice(0, cardBases.length)
 
 function ArticulosSection() {
   return (
@@ -34,11 +16,13 @@ function ArticulosSection() {
       </div>
 
       <p className="articulos-view-all">
-        <span className="articulos-view-all-text">VER TODOS</span>
-        <span className="articulos-view-all-arrow" aria-hidden="true" />
+        <Link to="/articulos" className="articulos-view-all-link">
+          <span className="articulos-view-all-text">VER TODOS</span>
+          <span className="articulos-view-all-arrow" aria-hidden="true" />
+        </Link>
       </p>
 
-      {articles.map((article, i) => {
+      {featuredArticles.map((article, i) => {
         const base = cardBases[i]
         const stackedTitle = true
         return (
@@ -55,14 +39,14 @@ function ArticulosSection() {
             <p className="articulos-date" style={{ top: base + (i >= 1 ? 14 : 0) }}>23 MAYO 2026</p>
             <p className="articulos-min" style={{ top: base + 45 + (i >= 1 ? 14 : 0) }}>6 MIN</p>
             <p className="articulos-desc" style={{ top: base + 65 + (i === 1 ? 23 : i === 2 ? -1 : 0) }}>
-              {article.desc}
+              {article.excerpt}
             </p>
-            <p className="articulos-nota" style={{ top: base + 150 + (i >= 1 ? 14 : 0) }}>
+            <Link to={`/articulos/${article.slug}`} className="articulos-nota" style={{ top: base + 150 + (i >= 1 ? 14 : 0) }} aria-label={`Leer nota completa: ${article.titleBold}`}>
               LEER NOTA COMPLETA
               <span className="articulos-nota-arrow" aria-hidden="true" />
-            </p>
+            </Link>
             {i === 0 ? <div className="articulos-divider" style={{ top: base + 263 }} /> : null}
-            {(i === 0 || i === 1 || i === 2) ? <div className="articulos-divider" style={{ top: base + 246 }} /> : null}
+            {(i === 0 || i === 2) ? <div className="articulos-divider" style={{ top: base + 246 }} /> : null}
           </div>
         )
       })}

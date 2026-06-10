@@ -4,6 +4,7 @@ import { asset } from '../utils/asset'
 function SumateSection() {
   return (
     <section className="sumate-section">
+      <div className="sumate-parallax" aria-hidden="true" />
       <div className="sumate-inner">
         <div className="sumate-left">
           <p className="sumate-heading">SÚMATE</p>

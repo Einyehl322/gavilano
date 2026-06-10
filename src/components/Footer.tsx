@@ -1,5 +1,6 @@
 import './Footer.css'
 import { asset } from '../utils/asset'
+import { Link, useLocation } from 'react-router-dom'
 
 const linkColumns = [
   [
@@ -14,6 +15,9 @@ const linkColumns = [
 ]
 
 function Footer() {
+  const location = useLocation()
+  const isHomePage = location.pathname === '/'
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
@@ -41,16 +45,22 @@ function Footer() {
             key={`footer-column-${index}`}
           >
             {column.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                onClick={(event) => {
-                  event.preventDefault()
-                  irASeccion(item.href)
-                }}
-              >
-                {item.label}
-              </a>
+              isHomePage ? (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  onClick={(event) => {
+                    event.preventDefault()
+                    irASeccion(item.href)
+                  }}
+                >
+                  {item.label}
+                </a>
+              ) : (
+                <Link key={item.label} to={`/${item.href}`}>
+                  {item.label}
+                </Link>
+              )
             ))}
           </div>
         ))}
