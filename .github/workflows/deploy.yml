@@ -1,0 +1,41 @@
+name: Deploy
+
+# Deploy de gavilano a vps2 (juandediosgavilano.com), estilo edwards, INLINE.
+# (gavilano es público y no puede usar el reusable privado de platform; por eso va inline.)
+# Cada push a main: build (base '/') + rsync de dist/ al docroot que sirve nginx en vps2.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-gavilano
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: [self-hosted, gavilano]   # runner vps2-gavilano-runner
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install + lint + build
+        run: |
+          set -euo pipefail
+          npm ci
+          npm run lint
+          npm run build              # base '/' por default (dominio raíz)
+
+      - name: Guard dist + rsync a vps2
+        run: |
+          set -euo pipefail
+          DOCROOT=/srv/nexus-containers/gavilano/public
+          # GUARD: rsync --delete con dist/ vacío borraría el sitio. Abortar si no hay archivos.
+          [ -n "$(find dist -mindepth 1 -type f -print -quit)" ] || { echo "::error::dist/ vacío -> abort (no se toca el docroot)"; exit 1; }
+          sudo rsync -rl --delete --chmod=D755,F644 dist/ "$DOCROOT/"
+          echo "deploy OK -> $DOCROOT"

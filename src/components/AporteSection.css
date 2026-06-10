@@ -172,7 +172,7 @@
   padding: 17px 0 0;
   text-align: left;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 26px;
   line-height: 28px;
   letter-spacing: 0;
@@ -197,15 +197,14 @@
   border-top-color: #D80E2B;
 }
 
+.aporte-projects-nav-item:hover {
+  font-weight: 700;
+}
+
 .aporte-projects-nav-item-casa {
   top: 0;
   left: 177px;
   width: 356px;
-}
-
-.aporte-projects-nav-item-active {
-  font-weight: 700;
-  color: #D80E2B;
 }
 
 .aporte-projects-nav-item-skate {

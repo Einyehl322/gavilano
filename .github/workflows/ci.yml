@@ -1,0 +1,34 @@
+name: CI
+
+# Gate de CI para PRs: corre lint + typecheck + build en cada Pull Request, ANTES de mergear.
+# Así un PR roto se ve en rojo acá y no llega a main (que deploya a GitHub Pages).
+# Corre en ubuntu-latest (GitHub-hosted): gavilano no tiene runner self-hosted y no lo necesita.
+# (En push a main NO corre: el build/deploy a Pages lo hace deploy-pages.yml, evitamos doble build.)
+on:
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install deps
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Build (tsc + vite)
+        run: npm run build

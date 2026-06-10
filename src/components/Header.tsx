@@ -1,4 +1,5 @@
 import logo from '/images/logo-gavilano.svg'
+import { Link, useLocation } from 'react-router-dom'
 import './Header.css'
 
 const navItems = [
@@ -9,7 +10,16 @@ const navItems = [
   { label: 'ARTICULOS', href: '#articulos' },
 ]
 
-function Header() {
+type HeaderProps = {
+  compact?: boolean
+  compactLabel?: string
+  compactHref?: string
+}
+
+function Header({ compact = false, compactLabel = 'Volver al inicio', compactHref = '/' }: HeaderProps) {
+  const location = useLocation()
+  const isHomePage = location.pathname === '/'
+
   const irASeccion = (href: string) => {
     const targetId = href.replace('#', '')
     const target = document.getElementById(targetId)
@@ -21,23 +31,42 @@ function Header() {
   }
 
   return (
-    <header className="header">
-      <img src={logo} className="header-logo" alt="Gavilano" />
-      <nav className="header-nav">
-        {navItems.map((item) => (
-          <a
-            key={item.label}
-            href={item.href}
-            className="header-nav-item"
-            onClick={(event) => {
-              event.preventDefault()
-              irASeccion(item.href)
-            }}
-          >
-            {item.label}
-          </a>
-        ))}
-      </nav>
+    <header className={`header ${compact ? 'header--compact' : ''}`}>
+      {compact ? (
+        <>
+          <Link to="/" className="header-logo-link" aria-label="Ir al inicio">
+            <img src={logo} className="header-logo" alt="Gavilano" />
+          </Link>
+          <Link to={compactHref} className="header-back-link">
+            {compactLabel}
+          </Link>
+        </>
+      ) : (
+        <>
+          <img src={logo} className="header-logo" alt="Gavilano" />
+          <nav className="header-nav">
+            {navItems.map((item) => (
+              isHomePage ? (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  className="header-nav-item"
+                  onClick={(event) => {
+                    event.preventDefault()
+                    irASeccion(item.href)
+                  }}
+                >
+                  {item.label}
+                </a>
+              ) : (
+                <Link key={item.label} to={`/${item.href}`} className="header-nav-item">
+                  {item.label}
+                </Link>
+              )
+            ))}
+          </nav>
+        </>
+      )}
     </header>
   )
 }

@@ -4,6 +4,8 @@ import { asset } from '../utils/asset'
 function Hero() {
   return (
     <section className="hero">
+      <div className="hero-bg-overlay" />
+      <div className="hero-mobile-portrait" aria-hidden="true" />
       <div className="hero-content">
         <h1 className="hero-title">EXPERIENCIA</h1>
         <p className="hero-subtitle">PARA</p>

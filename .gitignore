@@ -26,3 +26,6 @@ dist-ssr
 # Temporary local captures
 /.playwright-mcp/
 /*.png
+
+# Claude Code: settings personales por-máquina (no compartir)
+.claude/settings.local.json
