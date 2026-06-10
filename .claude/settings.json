@@ -1,0 +1,10 @@
+{
+  "extraKnownMarketplaces": {
+    "goberna-tools": { "source": { "source": "github", "repo": "Goberna-Lab/platform" } }
+  },
+  "enabledPlugins": {
+    "goberna-agents@goberna-tools": true,
+    "goberna-specialists@goberna-tools": true,
+    "goberna-skills@goberna-tools": true
+  }
+}
